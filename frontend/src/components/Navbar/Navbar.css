@@ -1,0 +1,144 @@
+/* ===== NAVBAR BASE ===== */
+.navbar {
+  background: linear-gradient(135deg, #4f6db3, #1b283d);
+  padding: 12px 20px;
+  box-shadow: 0 4px 20px rgba(109, 229, 221, 0.4);
+}
+
+/* ===== BRAND ===== */
+.navbar-brand {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff !important;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #e9eced !important;
+}
+
+/* Logo styling */
+.navbar-brand img {
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.1);
+}
+
+/* ===== NAV LINKS ===== */
+.navbar-nav .nav-link {
+  color: #edeff6 !important;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 8px;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+/* Hover underline animation */
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #e0e5e8;
+  transition: 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #e2db0e !important;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Active link */
+.navbar-nav .nav-link.active {
+  color: #38bdf8 !important;
+}
+
+/* ===== DROPDOWN ===== */
+.dropdown-menu {
+  background: #1e293b;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.dropdown-item {
+  color: #e2e8f0;
+  border-radius: 6px;
+  padding: 8px 12px;
+  transition: 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+/* ===== SEARCH BAR ===== */
+form input.form-control {
+  border-radius: 25px;
+  border: none;
+  padding: 8px 15px;
+  outline: none;
+  background: #334155;
+  color: white;
+}
+
+form input::placeholder {
+  color: #94a3b8;
+}
+
+form input:focus {
+  box-shadow: 0 0 8px #38bdf8;
+  background: #1e293b;
+}
+
+/* ===== SEARCH BUTTON ===== */
+form .btn {
+  border-radius: 25px;
+  padding: 8px 18px;
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+  transition: 0.3s ease;
+}
+
+form .btn:hover {
+  background: #38bdf8;
+  color: #0f172a;
+  box-shadow: 0 0 10px #38bdf8;
+}
+
+/* ===== TOGGLER ===== */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 991px) {
+  .navbar-nav {
+    margin-top: 10px;
+  }
+
+  .nav-link {
+    padding: 10px 0;
+  }
+
+  form {
+    margin-top: 10px;
+  }
+}
