@@ -1,10 +1,11 @@
+import Carousel from "../../components/Carousel/Carousel";
 import "./HomePage.css"
 
 function HomePage(){
     return(
         <>
-            <h1>Home Page</h1>
-            <p>Welcome to the Home Page!</p>
+            <Carousel/>
+            
         </>
     )
 }

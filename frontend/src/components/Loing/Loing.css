@@ -1,0 +1,102 @@
+/* Background */
+.loing-container {
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background: linear-gradient(135deg, #a2b4d5, #2d343e);
+font-family: 'Poppins', sans-serif;
+}
+
+/* Card */
+.loing-form {
+width: 350px;
+padding: 40px 30px;
+border-radius: 20px;
+background: rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(15px);
+box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+border: 1px solid rgba(255, 255, 255, 0.2);
+text-align: center;
+animation: fadeIn 0.8s ease;
+}
+
+/* Title */
+.loing-form h2 {
+color: #ffffff;
+margin-bottom: 25px;
+font-size: 28px;
+font-weight: 600;
+letter-spacing: 1px;
+}
+
+/* Inputs */
+.loing-form input {
+width: 100%;
+padding: 14px;
+margin: 12px 0;
+border-radius: 10px;
+border: none;
+outline: none;
+font-size: 14px;
+background: rgba(255, 255, 255, 0.2);
+color: #fff;
+transition: 0.3s;
+}
+
+/* Placeholder */
+.loing-form input::placeholder {
+color: #ddd;
+}
+
+/* Focus effect */
+.loing-form input:focus {
+background: rgba(255, 255, 255, 0.3);
+box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+/* Button */
+.loing-form button {
+width: 100%;
+padding: 14px;
+margin-top: 20px;
+border: none;
+border-radius: 10px;
+background: linear-gradient(135deg, #ff7eb3, #ff758c);
+color: #fff;
+font-size: 16px;
+font-weight: 600;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+/* Hover */
+.loing-form button:hover {
+transform: translateY(-3px);
+box-shadow: 0 8px 20px rgba(255, 117, 140, 0.5);
+}
+
+/* Click */
+.loing-form button:active {
+transform: scale(0.97);
+}
+
+/* Animation */
+@keyframes fadeIn {
+from {
+opacity: 0;
+transform: translateY(30px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+.loing-form {
+width: 90%;
+padding: 30px 20px;
+}
+}

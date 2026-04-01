@@ -1,0 +1,73 @@
+/* Full width carousel */
+#carouselExample {
+width: 70%;
+height: 80vh; 
+max-height: 600px;
+overflow: hidden;
+align-items: center;
+left: 15%;
+/* border-radius: 12px; */
+/* border: 1px solid #000; */
+/* top: 0%; */
+}
+
+/* Carousel inner wrapper */
+.carousel-inner {
+height: 100%;
+}
+
+/* Each slide */
+.carousel-item {
+/* top: 5%; */
+/* object-fit: contain; */
+height: 100%;
+transition: transform 0.01s ease-in-out;
+}
+
+/* Image styling */
+.carousel-item img {
+width: 100%;
+height: 100%;
+object-fit: fill; /* fills properly without distortion */
+}
+
+/* Optional dark overlay for better visibility */
+#carouselExample::before {
+content: "";
+position: absolute;
+inset: 0;
+background: rgba(0, 0, 0, 0.3);
+z-index: 1;
+}
+
+/* Keep content above overlay */
+.carousel-inner {
+position: relative;
+z-index: 2;
+}
+
+/* Controls styling */
+.carousel-control-prev,
+.carousel-control-next {
+width: 6%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+background-color: rgba(0, 0, 0, 0.6);
+border-radius: 50%;
+padding: 12px;
+}
+
+/* Hover effect */
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+background-color: #ff4d4d;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+#carouselExample {
+height: 40vh;
+}
+}

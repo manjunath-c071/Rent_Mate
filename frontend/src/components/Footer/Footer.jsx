@@ -2,11 +2,11 @@ import './Footer.css';
 
 function Footer() {
     return (
-        <footer classNameName="footer">
-            <div classNameName="footer-content">
+     
+            <div className="footer-content text-center fixed-bottom">
                 <p>&copy; 2026 RentMate. All rights reserved.</p>
             </div>
-        </footer>
+        
     );
 }
 

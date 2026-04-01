@@ -43,10 +43,6 @@ function Navbar() {
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="/Rent">For Rent</a>
-            </li>
-
-            <li className="nav-item">
               <a className="nav-link" href="/Flatmates">Flatmates</a>
             </li>
             
@@ -75,13 +71,12 @@ function Navbar() {
 
           </ul>
 
-          {/* Search */}
-          <form className="d-flex">
-            <input className="form-control me-2" type="search" placeholder="Search" />
-            <button className="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
+          {/* login & signup buttons */}
+          <div className="d-flex">
+            <a href="/Login" className="btn btn-outline-light me-2">Login</a>
+            <a href="/Signup" className="btn btn-outline-light me-3">Sign Up</a>
+          </div>
+
 
         </div>
       </div>
